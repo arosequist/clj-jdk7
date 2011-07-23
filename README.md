@@ -17,7 +17,7 @@ Create a temporary file, which will be deleted when the body completes:
 
 ```clojure
 (create-temp-file [temp1 (create-temp-file)
-                 temp2 (create-temp-file :suffix ".txt")]
+                   temp2 (create-temp-file :suffix ".txt")]
   (println (.toString temp1))
   (println (.toString temp2)))
 ```
