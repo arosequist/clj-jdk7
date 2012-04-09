@@ -21,7 +21,7 @@ Watch a folder for new, modified, and deleted files:
   [:create :modify :delete])
 ```
 
-Create a temporary file, which will be deleted when the body completes:
+Create two temporary files, which will be deleted when the body completes:
 
 ```clojure
 (create-temp-file [temp1 (create-temp-file)
