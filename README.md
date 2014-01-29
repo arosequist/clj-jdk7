@@ -2,6 +2,10 @@
 
 Wrappers for new functionality introduced in JDK7.
 
+## Status
+
+This library is no longer actively maintained and will probably be removed soon.
+
 ## Installation
 
 clj-jdk7 on clojars
@@ -24,8 +28,8 @@ Watch a folder for new, modified, and deleted files:
 Create two temporary files, which will be deleted when the body completes:
 
 ```clojure
-(create-temp-file [temp1 (create-temp-file)
-                   temp2 (create-temp-file :suffix ".txt")]
+(with-temp-file [temp1 (create-temp-file)
+                 temp2 (create-temp-file :suffix ".txt")]
   (println (.toString temp1))
   (println (.toString temp2)))
 ```
@@ -33,7 +37,7 @@ Create two temporary files, which will be deleted when the body completes:
 Same as above, but a shortcut for only one file:
 
 ```clojure
-(create-temp-file temp
+(with-temp-file temp
   (println (.toString temp)))
 ```
 
