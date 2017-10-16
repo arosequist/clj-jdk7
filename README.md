@@ -4,7 +4,7 @@ Wrappers for new functionality introduced in JDK7.
 
 ## Status
 
-This library is no longer actively maintained and will probably be removed soon.
+This library is no longer actively maintained. You should use something like [hawk](https://github.com/wkf/hawk) instead.
 
 ## Installation
 
